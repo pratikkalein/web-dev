@@ -3,46 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div Tags</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet" type="text/css" />
+ 
 
-    <style>
-        .box1 {
-            background-color: yellow;
-            width: 600px;
-            height: 400px;
-        }
-
-        .box2 {
-            background-color:pink;
-            width: 400px;
-            height: 250px;
-        }
-
-        .box3 {
-            background-color: gray;
-            width: 100px;
-            height: 300px;
-        }
-
-        .box4 {
-            background-color:purple;
-            width: 350px;
-            height: 120px;
-        }
-    </style>
 </head>
-
 <body>
-    
-    <div class="box1">
-        <div class="box3"></div>
-    </div>
+  <div class="container">
+      <div class="header">
+        <h2>REGISTRATION FORM</h2>
+      </div>
 
-    <div class="box2">
-        <div class="box4">
-            <h2>Heading 2</h2>
+      <form class="form" id="form" action="submit.html">
+        <!--Full Name-->
+        <div class="form-control">
+          <label>Name</label>
+          <input type="text"  id="fname" placeholder="Enter Your Full Name" autocomplete="off" required>
+          
         </div>
-    </div>
+
+        <!--Email ID-->
+        <div class="form-control">
+          <label>Email ID</label>
+          <input type="email"  id="email" placeholder="Enter Your Email" autocomplete="off" required>
+          
+        </div>
+         
+        <!--Mobile Number-->
+        <div class="form-control">
+          <label>Mobile Number</label>
+          <input type="number"  id="phone" placeholder="Enter Your Mobile Number" autocomplete="off" required>
+          
+        </div>
+
+         <!--Branch-->
+         <div class="form-control">
+          Branch <select  id="branch" required>
+            <option > </option>
+            <option >Computer</option>
+            <option >IT</option>
+            <option >Mechanical</option>
+            <option >ENTC</option>
+            <option >Chemical</option>
+            <option >Civil</option>
+          </select>
+          
+        </div>
+
+        <!--What is Photography for you-->
+        <div class="form-control">
+          <label>What is Photography for you ?</label>
+          <textarea name="ques1" id="ques1" cols="100" rows="8" placeholder="Your Answer Here" autocomplete="off" required></textarea> 
+          <!--<input type="text" name=" " id="ques1" placeholder="Your Answer Here" autocomplete="off">-->
+          
+        </div>
+        
+        <!--Why do you want to join Shutterbugs-->  
+        <div class="form-control">
+          <label>Why do you want to join Shutterbugs ?</label>
+          <textarea name="ques2" id="ques2" cols="100" rows="8" placeholder="Your Answer Here" autocomplete="off"required></textarea>
+        </div>
+
+        <!--Why do you want to join Shutterbugs-->  
+        <div class="form-control">
+          <label>Anything else you want to add ?</label>
+          <textarea name="" id="ques3 " cols="100" rows="5" placeholder="Your Answer Here" autocomplete="off"></textarea> 
+        </div>  
+         <input type="submit" value="Submit" class="btn">       
+      </form>
+  </div>
+
+
+
 
 </body>
 </html>
+
+

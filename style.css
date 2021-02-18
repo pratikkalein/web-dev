@@ -1,0 +1,139 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_1280.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 9px 15px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow:    0px 9px 15px 0px rgba(50, 50, 50, 0.35);
+    box-shadow:         0px 9px 15px 0px rgba(50, 50, 50, 0.35);
+    overflow:hidden;
+    width: calc(100vw-65vw);
+    max-width: 100;
+
+}
+
+.header{
+    background: #fed136;
+    padding: 30px 0;
+}
+
+.header h2{
+    color:floralwhite;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 4px 3px 7px rgba(73,54,56,0.44);
+}
+
+.form{
+    padding: 40px;
+}
+
+.form-control{
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width:100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display:inline-block;
+    font-family:"Montserrat";
+    font-size: 14px;
+    padding: 12px;
+}
+
+.form-control textarea{
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display:block;
+    font-family: "Montserrat";
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+}
+
+
+.form-control select{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 12px;
+    background-color: white;
+   
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control select:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control textarea:focus{
+    outline: 0;
+    border-color: #777;  
+}
+.form .btn{
+    background: #fed136;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color:white;
+    display: block;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all ease in;
+    text-shadow: 2px 2px 5px rgba(73,54,56,0.44);
+    box-shadow:  0px 7px 10px 0px rgba(50, 50, 50, 0.35);
+}
+
+.form .btn:hover{
+
+  background: #343a40;
+}
+
+@media(max-width:998px){
+    .container{
+        width: calc(100vw-35vw);
+        max-width: 100%;
+    }
+}
