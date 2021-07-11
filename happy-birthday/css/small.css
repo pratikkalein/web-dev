@@ -12,4 +12,8 @@ aside.right, aside.left{
     text-align: center;
     float: inherit;
 }  
- 
+
+iframe{
+    border-radius: 0;
+    width: 100%;
+}
